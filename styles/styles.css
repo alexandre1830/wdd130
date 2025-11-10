@@ -5,6 +5,9 @@
 *{
     font-family: arial;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -25,6 +28,7 @@ main img {
     border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 p{
     padding: 0px;
@@ -34,12 +38,15 @@ main{
 }
 aside{
     max-width: 840px;
-    margin: 10px;
-    border: var(--border);
-    padding: 2px;
     background-color: var(--background-color);
     color: white;
     text-align: center;
+    position: relative;
+}
+aside h2{
+    position: absolute;
+    top:15px;
+    left: 320px;
 }
 aside img{
     width: 200px;
@@ -52,4 +59,11 @@ footer{
     margin-top: 10px;
     border-top: var(--border);
     text-align: center;
+}
+/* Class selectors */
+
+.box {
+    margin: 1 rem;
+    padding: 1 rem;
+    border: var(--border);
 }
