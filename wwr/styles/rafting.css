@@ -1,0 +1,78 @@
+:root {
+    --color1: rgb(24, 122, 0);
+    --color2: rgba(255, 249, 158, 0.918);
+    --color3: rgba(14, 0, 90, 0.918);
+    --color4: rgba(40, 210, 233, 0.918);
+    --heading-font: "Arial";
+    --body-font: "Arial";   
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    color: var(var--color3);
+}
+header, main, footer {
+    width: 840px;
+    margin: auto;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--color3)
+}
+nav, p, article {
+    margin: 16px;
+    padding: 8px;
+}
+h1 {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    color: white;
+}
+h2 {
+    clear: both;
+    padding: 5px;
+    background-color: var(--color3);
+    color:white;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/*Class elements*/
+
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero p {
+    position: absolute;
+    bottom: 50px;
+    padding: 70px 155px 70px 20px;
+    text-align: justify;
+    background-color: var(--color3);
+    color: white;
+}
+.hero article img{
+    position: absolute;
+    z-index: 2;
+    float: right;
+    right: 45px;
+    bottom: 58px;
+    width: 100px;
+    margin: 20px 0 20px 20px;
+}
+.socialmedia a {
+    text-decoration: none;
+}
+
