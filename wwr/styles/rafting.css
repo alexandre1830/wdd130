@@ -29,9 +29,10 @@ nav, p, article {
 }
 h1 {
     position: absolute;
-    top: 200px;
+    top: 220px;
     right: 20px;
     color: white;
+    text-transform: uppercase;
 }
 h2 {
     clear: both;
@@ -49,29 +50,35 @@ footer {
 
 .hero {
     position: relative;
+    padding: 0 0 20px 0;
 }
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-.hero p {
+.hero article {
     position: absolute;
-    bottom: 50px;
-    padding: 70px 155px 70px 20px;
+    bottom: 20px;
+    padding: 50px 155px 50px 20px;
     text-align: justify;
     background-color: var(--color3);
+    opacity: 80%;
     color: white;
 }
 .hero article img{
     position: absolute;
     z-index: 2;
     float: right;
-    right: 45px;
-    bottom: 58px;
+    right: 40px;
+    bottom: 0;
     width: 100px;
     margin: 20px 0 20px 20px;
 }
+.socialmedia img {
+    margin: 0 20px 0 20px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
