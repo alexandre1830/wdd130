@@ -14,9 +14,33 @@ body {
     font-family: var(--body-font);
     color: var(--color3);
 }
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+nav a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color3);
+    margin: 15px 0 0 20px;
+}
 header, main, footer {
     width: 840px;
     margin: auto;
+}
+section img{
+    width: 50%;
+    display: flex;
+    box-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
 }
 h1, h2 {
     font-family: var(--heading-font);
@@ -31,7 +55,6 @@ h1 {
     position: absolute;
     top: 220px;
     right: 20px;
-
     text-transform: uppercase;
 }
 h2 {
@@ -42,7 +65,8 @@ h2 {
     text-align: center;
 }
 footer {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /*Class elements*/
@@ -75,6 +99,9 @@ footer {
     margin: 20px 0 20px 20px;
 }
 .socialmedia img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50px;
     height: 50px;
     margin: 0 20px 0 25px;
 }
