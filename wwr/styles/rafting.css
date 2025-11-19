@@ -33,14 +33,42 @@ header, main, footer {
     width: 840px;
     margin: auto;
 }
-section img{
-    width: 50%;
-    display: flex;
-    box-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    margin-top: 10px;
+section p{
+    margin: 20px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+section img.history{
+     float: left;              
+     max-width: 400px;
+     height: auto;
+     margin: 0 20px 20px 0;
+}
+ .history-grid {
+     display: grid;
+     grid-template-columns: 1fr 320px 1fr; 
+     gap: 20px;
+     align-items: start;
+     margin: 20px 0;
+ }
+ .history-grid .history {
+     width: 100%;
+     height: auto;
+     justify-self: center;
+     display: block;
+}
+ .history-text {
+     text-align: justify;
+     line-height: 1.6;
+     padding: 0 8px;
+ }
+ @media (max-width: 760px) {
+     .history-grid {
+         grid-template-columns: 1fr;
+     }
+     .history-grid .history {
+         margin: 0 auto;
+     }
 }
 h1, h2 {
     font-family: var(--heading-font);
@@ -103,7 +131,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     width: 50px;
     height: 50px;
-    margin: 0 20px 0 25px;
+    margin: 0 20px 0 0;
 }
 .socialmedia a {
     text-decoration: none;
