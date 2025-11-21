@@ -54,12 +54,9 @@ section img.history{
     gap: 20px;
     align-items: start;
     margin: 20px 0;
-    /* garante que texto que seja um nó anônimo se comporte como bloco */
     word-break: break-word;
     text-align: justify;
 }
-
-/* coloca a imagem na coluna do meio e centraliza */
 .history-grid > img.history {
     grid-column: 2;
     justify-self: center;
@@ -68,8 +65,7 @@ section img.history{
     height: auto;
     display: block;
     margin: 0;
-}
-  
+} 
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--color2)
@@ -135,4 +131,17 @@ footer {
 }
 .socialmedia a {
     text-decoration: none;
+}
+.images-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start
+}
+.images-gallery img{
+    display: flex;
+    align-items: space-between;
+    width: 150px;
+    height: auto;
+    margin: 10px 10px 10px 0;
 }
