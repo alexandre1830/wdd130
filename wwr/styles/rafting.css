@@ -39,37 +39,37 @@ section p{
     text-align: justify;
 }
 section img.history{
-     float: left;              
-     max-width: 400px;
-     height: auto;
-     margin: 0 20px 20px 0;
-}
- .history-grid {
      display: grid;
-     grid-template-columns: 1fr 320px 1fr; 
+     grid-template-columns: 1fr 320px 1fr;
      gap: 20px;
-     align-items: start;
-     margin: 20px 0;
- }
- .history-grid .history {
-     width: 100%;
+     align-items: start;        
+     max-width: 320px;
      height: auto;
+     margin: 20px;
      justify-self: center;
-     display: block;
 }
- .history-text {
-     text-align: justify;
-     line-height: 1.6;
-     padding: 0 8px;
- }
- @media (max-width: 760px) {
-     .history-grid {
-         grid-template-columns: 1fr;
-     }
-     .history-grid .history {
-         margin: 0 auto;
-     }
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(220px, 320px) 1fr;
+    gap: 20px;
+    align-items: start;
+    margin: 20px 0;
+    /* garante que texto que seja um nó anônimo se comporte como bloco */
+    word-break: break-word;
+    text-align: justify;
 }
+
+/* coloca a imagem na coluna do meio e centraliza */
+.history-grid > img.history {
+    grid-column: 2;
+    justify-self: center;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+  
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--color2)
