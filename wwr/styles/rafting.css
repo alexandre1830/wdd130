@@ -54,7 +54,6 @@ section img.history{
     gap: 20px;
     align-items: start;
     margin: 20px 0;
-    word-break: break-word;
     text-align: justify;
 }
 .history-grid > img.history {
@@ -140,7 +139,7 @@ footer {
 }
 .images-gallery img{
     display: flex;
-    align-items: space-between;
+    justify-content: space-between;
     width: 150px;
     height: auto;
     margin: 10px 10px 10px 0;
