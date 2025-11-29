@@ -74,12 +74,6 @@ nav, p, article {
     margin: 16px;
     padding: 8px;
 }
-h1 {
-    position: absolute;
-    top: 220px;
-    right: 20px;
-    text-transform: uppercase;
-}
 h2 {
     clear: both;
     padding: 5px;
@@ -121,6 +115,12 @@ footer {
     width: 100px;
     margin: 20px 0 20px 20px;
 }
+.hero h1 {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    text-transform: uppercase;
+}
 .socialmedia img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,4 +143,28 @@ footer {
     width: 150px;
     height: auto;
     margin: 10px 10px 10px 0;
+}
+.employees{
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 1px solid var(--color1)
+}
+.employees img{
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    width: auto;
+}
+.employees figcaption{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.employees h1 {
+    position: top;
+    justify-self: center;
 }

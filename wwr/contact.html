@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Exciting Expeditions</title>
+    <meta name="description" content="Contact Information on Exciting Expeditions">
+    <meta name="author" content="Alexandre Oliveira Souza">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="The website logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Exciting Expeditions</h1>
+        <p>Address: 999, Main Lake Avenue</p>
+        <p>Phone Number: +1 234-567</p>
+        <p>E-mail: contactus@expeditions.com</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d181563.10892898694!2d-113.07272905017346!3d37.049401746535786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1764378857578!5m2!1sen!2sbr"
+            width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email">
+
+            <p>Purpose of the message: </p>
+            <input type="radio" id="general" name="purpose" value="general">
+            <label for="purpose">General Inquiry</label>
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            <label for="reservation">Reservation Question</label>
+            <input type="radio" id="website" name="purpose" value="website">
+            <label for="website">Website Suggestion</label>
+
+            <label for="message">Message: </label>
+            <textarea id="message" , name="message" rows="5">
+                Write your message here...
+            </textarea>
+
+            <label for="newletter">Please subscribe me to the monthly newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div class="employees">
+            <h1>We are here to serve you</h1>
+
+            <figure>
+                <img src="images/john.jpg" alt="a picture of John">
+                <figcaption>John Smith<br>Head of Marketing.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mary.jpg" alt="a picture of Mary">
+                <figcaption>Mary Elizabeth<br> Commercial representative.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/thomas.jpg" alt="a picture of Thomas">
+                <figcaption>Thomas Wallace<br>Head of Security</figcaption>
+            </figure>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 | Exciting Expeditions | Alexandre Oliveira</p>
+        <nav class="socialmedia">
+            <a><img src="images/instagram.svg" alt="Instagram Icon"></a>
+            <a><img src="images/youtube.svg" alt="YouTube Icon"></a>
+            <a><img src="images/tiktok.svg" alt="Tiktok Icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
