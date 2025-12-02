@@ -86,8 +86,6 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
-/*Class elements*/
-
 .hero {
     position: relative;
     padding: 0 0 20px 0;
@@ -144,27 +142,187 @@ footer {
     height: auto;
     margin: 10px 10px 10px 0;
 }
+
 .employees{
-    position: relative;
-    padding-top: 100px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    border: 1px solid var(--color1)
+    border: 1px solid var(--color1);
+    margin-top: 40px;
+    text-align: center;
+    flex-wrap: wrap; 
+    clear: both; 
 }
-.employees img{
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 200px;
+.employees h1 { 
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color2); 
+    background: none;
+    clear: none;
+    font-size: 2em; 
+}
+.employees figure {
+    flex-basis: 30%; 
+    padding: 10px;
+    margin: 10px 0;
+}
+.employees img {
+    height: 150px; 
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 3px solid var(--color2);
+    margin-bottom: 10px;
+}
+.employees figcaption {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: bold;
+    display: block; 
+}
+
+main h1:first-of-type {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main p:nth-of-type(1), 
+main p:nth-of-type(2), 
+main p:nth-of-type(3) {
+    text-align: center;
+    margin: 5px 0;
+}
+
+iframe {
+    width: 49%;
+    height: 450px;
+    border: none;
+    margin-top: 15px;
+    float: left; 
+}
+form {
+    width: 49%;
+    float: right; 
+    border: 1px solid var(--color2);
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 10px 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+form input[type="text"], 
+form textarea {
+    padding: 8px;
+    border: 1px solid var(--color3);
+    border-radius: 4px;
+    width: 100%;
+}
+form textarea {
+    grid-column: 2 / 3; 
+    height: 100px;
+}
+form label[for="message"] {
+    grid-column: 1 / 2;
+    align-self: start;
+    padding-top: 8px;
+}
+form p {
+    grid-column: 1 / 3; 
+    margin: 10px 0 5px 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: left; 
+}
+
+form input[type="radio"], 
+form label[for="general"], 
+form label[for="reservation"], 
+form label[for="website"] {
+    margin: 2px 0;
+    padding: 0;
+    text-align: left;
+}
+
+form input[type="radio"] {
+    grid-column: 1 / 3; 
+    display: inline-block; 
     width: auto;
+    margin-left: 20px;
 }
-.employees figcaption{
-    
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+
+form label[for="newletter"],
+form input[type="checkbox"] {
+    grid-column: 1 / 3; 
+    margin: 5px 0;
+    justify-self: start;
+    display: inline-block;
+    padding: 0;
 }
-.employees h1 {
-    position: top;
-    justify-self: center;
+form label[for="newletter"] {
+    margin-left: 5px; 
+}
+form input[type="checkbox"] {
+    margin-left: 0;
+}
+form input[type="radio"],
+form label[for="general"],
+form label[for="reservation"],
+form label[for="website"] {
+    grid-column: 1 / 3; 
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+}
+
+form label[for="general"],
+form label[for="reservation"],
+form label[for="website"] {
+    margin-left: 5px; 
+}
+form input[type="radio"] {
+    margin-left: 20px;
+}
+
+form input[type="submit"] {
+    grid-column: 1 / 3; 
+    padding: 10px 20px;
+    background-color: var(--color2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    justify-self: center; 
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: var(--color3);
+}
+
+form label[for="newsletter"] {
+    margin-left: 5px; 
+}
+form label[for="newletter"] {
+    display: none;
+}
+form label[for="newsletter"] {
+    grid-column: 1 / 3; 
+    justify-self: start;
+    margin-left: 25px; 
+    display: inline-block;
+    padding: 0;
+}
+form input[type="checkbox"] {
+    grid-column: 1 / 3; 
+    justify-self: start;
+    display: inline-block;
+    margin-left: 0;
+    padding: 0;
 }
