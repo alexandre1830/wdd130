@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Exciting Expeditions</title>
+    <meta name="description" content="Welcome to Exciting Expeditions, your best choice for white water rafting adventures.">
+    <meta name="author" content="Alexandre Oliveira Souza">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="The website logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section com Título Absoluto -->
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rafting adventure main banner">
+            <h1>Experience the Rush</h1>
+            <!-- Pequeno article opcional mantido para consistência visual se desejar, ou removido se preferir limpar a home -->
+        </div>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2>Ready for the Adventure of a Lifetime?</h2>
+            <p>Join us on our next expedition and create memories that will last forever.</p>
+            <a href="trips.html" class="cta-button">View Our Trips</a>
+        </section>
+
+        <!-- CSS Grid Layout (Purpose and Offerings) -->
+        <section class="home-grid">
+            <div class="grid-item content">
+                <h2>Our Purpose</h2>
+                <p>At Exciting Expeditions, we believe that nature is the best playground. Our mission is to provide safe, thrilling, and unforgettable white water rafting experiences for adventurers of all skill levels. We respect the river and aim to teach our guests about conservation while having fun.</p>
+            </div>
+            <div class="grid-item image">
+                <img src="images/rafting1.jpg" alt="Rafting team paddling" onerror="this.src='images/history.jpg'">
+            </div>
+            
+            <div class="grid-item image">
+                <img src="images/rafting2.jpg" alt="Scenic river view" onerror="this.src='images/happy-kayak.jpg'">
+            </div>
+            <div class="grid-item content">
+                <h2>What We Offer</h2>
+                <p>We offer a variety of packages ranging from family-friendly float trips to adrenaline-pumping Class V rapids. Our certified guides ensure your safety while you navigate the stunning canyons and rushing waters. All equipment is provided, just bring your spirit of adventure!</p>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <h2>Stay Updated</h2>
+            <p>Sign up for our newsletter to get the latest news on trip dates and special discounts.</p>
+            <form action="#" method="post" class="newsletter-form">
+                <label for="news-name">Name:</label>
+                <input type="text" id="news-name" name="news-name" required placeholder="Your Name">
+                
+                <label for="news-email">Email:</label>
+                <input type="email" id="news-email" name="news-email" required placeholder="Your Email">
+                
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Exciting Expeditions | Alexandre Oliveira</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/instagram.svg" alt="Instagram Icon"></a>
+            <a href="#"><img src="images/youtube.svg" alt="YouTube Icon"></a>
+            <a href="#"><img src="images/tiktok.svg" alt="Tiktok Icon"></a>
+        </nav>
+    </footer>
+</body>
+</html>
